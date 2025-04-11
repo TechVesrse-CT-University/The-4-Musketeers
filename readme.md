@@ -135,7 +135,9 @@ During training, InVisionX tracks four key metrics:
 **📈 Model Evauluation Metrics**  <br>
 ![Graph 2](images/example3.png)
 
-**📊 Model Evaluation Metrics Explained**
+---
+
+## 📊 Model Evaluation Metrics Explained
 
 ## 🔍 1. Support
 🧮 **Support** refers to the number of actual samples for each class in the dataset.
