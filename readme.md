@@ -132,7 +132,7 @@ During training, InVisionX tracks four key metrics:
 **📉 Accuracy & Loss Graphs**  
 ![Graph 1](images/Figure_1.png)
 
-**Model Evauluation Metrics**
+**Model Evauluation Metrics**  <br>
 ![Graph 2](images/example3.png)
 
 **📊 Model Evaluation Metrics Explained**
