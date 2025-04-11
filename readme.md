@@ -209,7 +209,3 @@ The **F1-score** is the **harmonic mean** of precision and recall. It's a single
 | `index.py` | Trains the AI model |
 | `app.py` | Hosts the prediction service |
 | `index.html` | Enables user interaction |
-
-ThankYou for giving us the Opportunity to learn and collaborate with most innovative minds of the Country.
-
-
