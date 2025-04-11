@@ -130,9 +130,73 @@ During training, InVisionX tracks four key metrics:
 ![Test Faces and Results](images/Faces_1.png)
 
 **📉 Accuracy & Loss Graphs**  
-![Graph 1](images/Figure_1.png)  
+![Graph 1](images/Figure_1.png)
+
+**Model Evauluation Metrics**
 ![Graph 2](images/example3.png)
-![Graph 3](images/example4.jpeg)
+
+**📊 Model Evaluation Metrics Explained**
+
+## 🔍 1. Support
+🧮 **Support** refers to the number of actual samples for each class in the dataset.
+
+- **Fake**: 120 examples labeled as Fake.
+- **Real**: 135 examples labeled as Real.
+
+It helps to understand how balanced the dataset is.
+
+---
+
+## 🧠 2. Precision
+**Precision** tells us: _Out of all the images the model predicted as "Real", how many were actually real?_
+
+### Formula:
+
+- **TP** = True Positives (correctly predicted Real images)
+- **FP** = False Positives (images incorrectly predicted as Real)
+
+📌 **High precision** means **fewer false positives**.
+
+Example:
+- For "Real": If the model predicted 100 images as Real, and 59 of them were actually Real,  
+  ➤ Precision = **59%**
+
+---
+
+## 🔍 3. Recall
+**Recall** tells us: _Out of all the actual "Real" images, how many did the model correctly identify?_
+
+### Formula:
+
+- **TP** = True Positives  
+- **FN** = False Negatives (Real images wrongly predicted as Fake)
+
+📌 **High recall** means **fewer false negatives**.
+
+Example:
+- For "Real": If there were 100 actual Real images, and the model correctly identified 61 of them,  
+  ➤ Recall = **61%**
+
+---
+
+## ⚖️ 4. F1-Score
+The **F1-score** is the **harmonic mean** of precision and recall. It's a single metric that balances both.
+
+### Formula:
+
+- Useful when you care about both **precision and recall**, especially in imbalanced datasets.
+
+📌 A **high F1-score** means the model is doing well on both avoiding false positives and false negatives.
+
+---
+
+### ✅ Summary Table (Example)
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| Fake  | 0.54      | 0.53   | 0.53     | 120     |
+| Real  | 0.59      | 0.61   | 0.60     | 135     |
+| **Avg** | **0.57** | **0.57** | **0.57** | 255     |
 
 ---
 
